@@ -1,0 +1,58 @@
+.bodycontent{
+    height: 90vh;
+}
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 6rem;
+    color: #ffffff;
+}
+.title1{
+    padding-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+.title2{
+    padding-top: -20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+.ant-carousel .slick-slide  {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    line-height: 80px;
+    overflow: hidden;
+    padding-top: 2%;
+  }
+  .slick-slide.slick-active[data-index="0"] {
+    background: rgb(255, 0, 0);
+  }
+  .slick-slide.slick-active[data-index="1"] {
+    background: rgb(0, 204, 255);
+  }
+  .slick-slide.slick-active[data-index="2"] {
+    background: rgb(255, 145, 0);
+  }
+  .slick-slide.slick-active[data-index="3"] {
+    background: rgb(255, 0, 157);
+  }
+  .ant-carousel .slick-slide li {
+    background: black;
+  }
+  @media only screen and (max-width: 767px) {
+    .title {
+      font-size: 2.2rem;
+  }
+  .title1{
+      font-size: 1.1rem;
+      
+  }
+  .title2{
+      font-size: 1.1rem;
+      
+  }
+  }
+    

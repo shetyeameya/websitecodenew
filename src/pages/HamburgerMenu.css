@@ -1,0 +1,18 @@
+.backgroundshow{
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    background: #0665d1;
+}
+.col1{
+    padding-right: 15%;
+}
+.logomenu{
+    background: #0665d1;
+    border: none; 
+    padding: 0;  
+}
+
+.imagep{
+    width: 100%;
+}

@@ -1,0 +1,50 @@
+.headerpad{
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    background: #0665d1;
+
+}
+.buttonpad{
+    background: #0665d1;
+    font-family: fantasy;
+    font-size: 1.5rem;
+    border: none;  
+}
+button.ant-btn.buttonpad1 {
+    color: white;
+}
+.buttonpad.ant-btn:hover, .ant-btn:focus, .ant-btn:active, .ant-btn.active {
+    text-decoration: none;
+    background: #0665d1;
+}
+.buttonpad.ant-btn:hover, .ant-btn:focus {
+    color: cyan;
+    background-color: #0665d1;
+    border-color: #0665d1;
+}
+.buttonpad1{
+    background: #0665d1;
+    font-family: fantasy;
+    font-size: 1.1rem;
+    border: none;  
+}
+.buttonpad1.ant-btn:hover, .ant-btn:focus, .ant-btn:active, .ant-btn.active {
+    text-decoration: none;
+    background: #0665d1;
+}
+.buttonpad1.ant-btn:hover, .ant-btn:focus {
+    color: cyan;
+    background-color: #0665d1;
+    border-color: #0665d1;
+}
+.imgpad{
+    width: 50%;
+    height: 110%;
+}
+.emailtext{
+    font-size: 0.9rem;
+    }
+.menu{
+    font-family: fantasy;
+}
