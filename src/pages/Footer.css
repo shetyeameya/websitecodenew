@@ -18,14 +18,14 @@
     align-items: center;
   }
   .logopading1{
-    font-family: fantasy;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1rem;
     text-align: center;
     justify-content: center;
     align-items: center;
   }
   .textpading{
-    font-family: fantasy;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 0.9rem;
     color: cyan;
   }
@@ -40,7 +40,7 @@
   }
   .footcon a{
     color: cyan;
-    font-family: fantasy;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1rem;
   }
   .footlogo{
@@ -82,7 +82,7 @@ padding: 5%;
 }
 .footcon{
   font-size: 1.5rem;
-  font-family: fantasy;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 

@@ -5,11 +5,11 @@
 .header{
     text-align: center;
     font-size: 3rem;
-    font-family: fantasy
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .paratext{
     font-size: 1.3rem;
-    font-family: fantasy;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .curimg{
     width: 100%;

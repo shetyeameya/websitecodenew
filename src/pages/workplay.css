@@ -2,7 +2,7 @@
     padding: 2%;
 }
 .sum{
-    font-family: fantasy;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2rem;
 }
 .sum.ant-tag{
@@ -10,7 +10,7 @@
     
 }
 .sumdef{
-    font-family: fantasy;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.3rem;
     padding-top: 1%;
 }
@@ -20,7 +20,7 @@ justify-content: center;
 align-items: center;
 }
 .skills{
-    font-family: fantasy;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 0.9rem;
 }
 .skills.ant-tag{
@@ -29,7 +29,7 @@ align-items: center;
     
 }
 .tchr{
-    font-family: fantasy;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-top: 2%;
 }
 .tchr strong {
@@ -42,7 +42,7 @@ align-items: center;
     text-align: left;
 }
 .pokem{
-    font-family: fantasy;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1rem;
 }
 .padbot{
@@ -56,7 +56,7 @@ align-items: center;
         padding: 2%;
     }
     .sum{
-        font-family: fantasy;
+        font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 1.3rem;
     }
     .sum.ant-tag{
@@ -64,7 +64,7 @@ align-items: center;
         
     }
     .sumdef{
-        font-family: fantasy;
+        font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 0.9rem;
         padding-top: 1%;
     }
@@ -74,7 +74,7 @@ align-items: center;
     align-items: center;
     }
     .skills{
-        font-family: fantasy;
+        font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 0.9rem;
     }
     .skills.ant-tag{
@@ -83,7 +83,7 @@ align-items: center;
         
     }
     .tchr{
-        font-family: fantasy;
+        font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         padding-top: 4%;
     }
     .tchr strong {
@@ -96,7 +96,7 @@ align-items: center;
         text-align: left;
     }
     .pokem{
-        font-family: fantasy;
+        font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 1rem;
     }
 

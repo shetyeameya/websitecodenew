@@ -328,7 +328,7 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={aditilor} alt="current-user-thumbnail"/>
                         </Modal>
                   </Row>
-                  <Row>
+                  {/* <Row>
                         <Button type="primary" onClick={this.showModalA}>
                             Principal Joquim
                         </Button>
@@ -341,7 +341,7 @@ class WorkPlay extends Component{
                         >
                             <img className="lorimg" src={aditilor} alt="current-user-thumbnail"/>
                         </Modal>
-                  </Row>
+                  </Row> */}
               </div>
               <div className="tchr">
                 <Text  strong>Intrested in Pokemons?</Text>
@@ -506,13 +506,13 @@ class WorkPlay extends Component{
               </div>
               <div>
                   <Row>
-                      <Col className="pokem" align="center" span={6}>
+                      <Col className="pokem" align="left" span={8}>
                         <Button type="primary" onClick={this.showModalP}>
                             Poornima Mam LOR
                         </Button>
                         <Modal
                             visible={showPjpg}
-                            title="Title"
+                            title="Poornima Mam LOR"
                             onCancel={this.handleCancel}
                             footer={null}
                             width="80%"
@@ -520,13 +520,13 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={poornimalor} alt="current-user-thumbnail"/>
                         </Modal>
                       </Col>
-                      <Col className="pokem" align="center" span={6}>
+                      <Col className="pokem" align="left" span={8}>
                         <Button type="primary" onClick={this.showModalV}>
                             Vaishali Mam LOR
                         </Button>
                         <Modal
                             visible={showVjpg}
-                            title="Title"
+                            title="Vaishali Mam LOR"
                             onCancel={this.handleCancel}
                             footer={null}
                             width="80%"
@@ -534,13 +534,13 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={vaishalilor} alt="current-user-thumbnail"/>
                         </Modal>
                       </Col>
-                      <Col className="pokem" align="center" span={6}>
+                      <Col className="pokem" align="left" span={8}>
                         <Button type="primary" onClick={this.showModalA}>
                             Aditi Mam LOR
                         </Button>
                         <Modal
                             visible={showAjpg}
-                            title="Title"
+                            title="Aditi Mam LOR"
                             onCancel={this.handleCancel}
                             footer={null}
                             width="80%"
@@ -548,7 +548,7 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={aditilor} alt="current-user-thumbnail"/>
                         </Modal>
                         </Col>
-                        <Col className="pokem" align="center" span={6}>
+                        {/* <Col className="pokem" align="center" span={6}>
                         <Button type="primary" onClick={this.showModalA}>
                             Principal Joquim
                         </Button>
@@ -562,7 +562,7 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={aditilor} alt="current-user-thumbnail"/>
                         </Modal>
                       
-                      </Col>
+                      </Col> */}
                   </Row>
               </div>
               <div className="tchr">

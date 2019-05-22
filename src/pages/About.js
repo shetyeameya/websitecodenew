@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Col, Row, } from 'antd'; 
+import {Col, Row,Button, Modal } from 'antd'; 
 import './About.css'
 import PropTypes from 'prop-types';
 import keeping from '../images/keeping.JPG'
@@ -15,8 +15,23 @@ import GetViewPort from '../hoc-helpers/GetViewPort'
 
 
 class About extends Component{
-    render() {
+    state={
+        showVid: false,
+        playing: false,
+    };
+    showModalVid = () => {
+        this.setState({
+            showVid: true,
+            playing: true,
+        });
+      };
+      handleCancel = () => {
+        this.setState({ showVid: false,  playing: false });
+       
+      };
 
+    render() {
+        const { showVid, playing } = this.state;
         const { width } = this.props;
         if (width < 786) {
           return(
@@ -107,7 +122,20 @@ class About extends Component{
                         </Col>
                     </Row>
                     <Row className="sourcepad">
-                            <Col align="center"><ReactPlayer width="100%" height="100%" url={video} playing loop="true" volume="1"/></Col> 
+                    <Col align="center">
+                    <Button type="primary" onClick={this.showModalVid}>
+                            Watch a glimpse of me in action?
+                        </Button>
+                        <Modal
+                            visible={showVid}
+                            title="Me behind the wickets."
+                            onCancel={this.handleCancel}
+                            footer={null}
+                            width="100%"
+                        >
+                           <Col align="center"><ReactPlayer width="100%" height="100%"  url={video} playing={this.state.playing} loop="true" volume="1"/></Col> 
+                        </Modal>
+                        </Col>    
                     </Row>
                     
                     <Row className="sourcepad">
@@ -118,6 +146,9 @@ class About extends Component{
                             </p>
                         </Col>
                     </Row>
+                    <div>
+                        <p className="header">“I owe everything to my Parents!</p>
+                    </div>
                  </div>
               </div>
           );
@@ -170,8 +201,22 @@ class About extends Component{
                         <Col align="center" span={8}> <img className="curimg" alt="trophy" src={trophy} /></Col>  
                     </Row>
                     <Row className="sourcepad">
-                            <Col align="center"><ReactPlayer url={video} playing loop="true" volume="1"/></Col> 
+                    <Col align="center">
+                    <Button type="primary" onClick={this.showModalVid}>
+                            Watch a glimpse of me in action?
+                        </Button>
+                        <Modal
+                            visible={showVid}
+                            title="Me behind the wickets."
+                            onCancel={this.handleCancel}
+                            footer={null}
+                            width="50%"
+                        >
+                           <Col align="center"><ReactPlayer controls="true" url={video} playing={this.state.playing} loop="true" volume="1"/></Col> 
+                        </Modal>
+                        </Col>    
                     </Row>
+                    
                     <Row className="sourcepad">
                         <Col>
                             <p className="paratext">
@@ -179,6 +224,11 @@ class About extends Component{
                             </p>
                         </Col>
                     </Row>
+                    <div>
+                    <p className="header">
+                    “I owe everything to my Parents!
+                    </p>
+                </div>
                  </div>
             </div>
         );
