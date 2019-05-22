@@ -1,7 +1,7 @@
 
-import { Menu, Icon, Button, Row, Col } from 'antd';
+import { Button, Row, Col } from 'antd';
 import { Link } from 'react-router-dom';
-import React, { Component } from 'react';
+import React from 'react';
 import './HamburgerMenu.css'
 import DrawerToggleButton from '../component/DrawerToggle'
 import Ameya_logo_2 from '../images/Ameya_logo_2.png'

@@ -1,7 +1,7 @@
 import React from 'react';
 import './SideDrawer.css';
 import { Link } from 'react-router-dom';
-import {Menu, Dropdown, Button, Icon, Modal, Col, Row} from 'antd';
+import {Button, Col, Row} from 'antd';
 
 
 
@@ -59,7 +59,7 @@ const SideDrawer = props =>{
                           <Button className="" shape="circle" icon="linkedin" onClick={handleLinkedinClick} />
                         </Col>
                         <Col align="center" span={4}>
-                          <Button className="" shape="circle" icon="google" onClick={props.modal} />
+                          <Button className="" shape="circle" icon="mail" onClick={props.modal} />
                         </Col>
                         <Col align="center" span={4}>
                           <Button className="" shape="circle" icon="skype" onClick={props.modal1}/>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Row,Carousel, Menu, Col, Button} from 'antd';
-import PropTypes from 'prop-types';
+import { Row,Carousel} from 'antd';
 import './Body.css'
 // import GetViewPort from '../hoc-helpers/GetViewPort';
 function onChange(a, b, c) {

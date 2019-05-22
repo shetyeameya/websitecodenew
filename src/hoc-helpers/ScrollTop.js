@@ -1,9 +1,12 @@
 import { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { withRouter } from "react-router";
 
-class ScrollTop extends Component {
-  componentDidUpdate() {
-    ReactDOM.findDOMNode(this).scrollIntoView();
+class ScrollToTop extends Component {
+  componentDidUpdate(prevProps) {
+    if (this.props.location.pathname !== prevProps.location.pathname) {
+      window.scrollTo(0, 0);
+    }
   }
 
   render() {
@@ -11,4 +14,9 @@ class ScrollTop extends Component {
   }
 }
 
-export default ScrollTop;
+export default withRouter(ScrollToTop);
+
+// class ScrollTop extends Component {
+//   componentDidUpdate() {
+//     ReactDOM.findDOMNode(this).scrollIntoView();
+//   }

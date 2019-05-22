@@ -1,0 +1,105 @@
+.page{
+    padding: 2%;
+}
+.sum{
+    font-family: fantasy;
+    font-size: 2rem;
+}
+.sum.ant-tag{
+    line-height: 1.6;
+    
+}
+.sumdef{
+    font-family: fantasy;
+    font-size: 1.3rem;
+    padding-top: 1%;
+}
+.TecSkl{
+padding-top: 1%;
+justify-content: center;
+align-items: center;
+}
+.skills{
+    font-family: fantasy;
+    font-size: 0.9rem;
+}
+.skills.ant-tag{
+    line-height: 1.8;
+    margin-bottom: 0.5%
+    
+}
+.tchr{
+    font-family: fantasy;
+    padding-top: 2%;
+}
+.tchr strong {
+    font-size: 2rem;
+}
+.lorimg{
+    width: 100%;
+}
+.para{
+    text-align: left;
+}
+.pokem{
+    font-family: fantasy;
+    font-size: 1rem;
+}
+.padbot{
+    padding-bottom: 4%;
+}
+.butpad{
+    padding-bottom: 3%; 
+}
+@media only screen and (max-width: 767px) {
+    .page{
+        padding: 2%;
+    }
+    .sum{
+        font-family: fantasy;
+        font-size: 1.3rem;
+    }
+    .sum.ant-tag{
+        line-height: 1.6;
+        
+    }
+    .sumdef{
+        font-family: fantasy;
+        font-size: 0.9rem;
+        padding-top: 1%;
+    }
+    .TecSkl{
+    padding-top: 1%;
+    justify-content: center;
+    align-items: center;
+    }
+    .skills{
+        font-family: fantasy;
+        font-size: 0.9rem;
+    }
+    .skills.ant-tag{
+        line-height: 1.5;
+        margin-bottom: 0.5%
+        
+    }
+    .tchr{
+        font-family: fantasy;
+        padding-top: 4%;
+    }
+    .tchr strong {
+        font-size: 1rem;
+    }
+    .lorimg{
+        width: 100%;
+    }
+    .para{
+        text-align: left;
+    }
+    .pokem{
+        font-family: fantasy;
+        font-size: 1rem;
+    }
+
+}
+    
+

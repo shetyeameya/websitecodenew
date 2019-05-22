@@ -38,3 +38,9 @@
     padding-top: 2%;
 
 }
+.back{
+    /* padding-top: 2%; */
+    padding-bottom: 2%;
+    font-family: fantasy;
+    font-size: 0.9rem;
+}

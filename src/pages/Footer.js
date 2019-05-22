@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../logo.svg'
-import { Row, Menu, Col, Button, Modal} from 'antd';
+import { Row, Col, Button, Modal} from 'antd';
 import PropTypes from 'prop-types';
 import './Footer.css'
 import Ameya_logo_2 from '../images/Ameya_logo_2.png'
 import GetViewPort from '../hoc-helpers/GetViewPort'
 
- const { SubMenu } = Menu;
 
  function info() {
   Modal.info({

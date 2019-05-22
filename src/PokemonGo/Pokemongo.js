@@ -74,7 +74,7 @@ class Pokemongo extends Component{
                 marginBottom: 16,
                 fontWeight: 500,
                 width:300,
-                }}  
+                }} 
                     hoverable
                     title={pokemon.name.toUpperCase()}
                     cover={<img alt={pokemon.name} src={`http://play.pokemonshowdown.com/sprites/xyani/${pokemon.name}.gif`} />}>

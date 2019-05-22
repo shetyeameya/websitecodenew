@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../logo.svg'
 import {Menu, Dropdown, Button, Icon, Modal, Col} from 'antd'; 
 import './header.css'
 import PropTypes from 'prop-types';
@@ -99,7 +98,7 @@ class Header extends Component{
         <Menu className="menu">
           <Menu.Item key="1" onClick={this.handleMenuClick}><Icon type="facebook" />Facebook</Menu.Item>
           <Menu.Item key="2" onClick={this.handleMenuClick}><Icon type="linkedin" />Linkedin</Menu.Item>
-          <Menu.Item key="3" onClick={this.info}><Icon type="google" />Gmail</Menu.Item>
+          <Menu.Item key="3" onClick={this.info}><Icon type="mail" />Gmail</Menu.Item>
           <Menu.Item key="4" onClick={this.info1}><Icon type="skype" />Skype</Menu.Item>
           <Menu.Item key="5" onClick={this.handleMenuClick}><Icon type="instagram" />Instagram</Menu.Item>
           <Menu.Item key="6" onClick={this.handleMenuClick}><Icon type="github" />Github</Menu.Item>
@@ -147,4 +146,3 @@ Header.propTypes = {
   };
 const HeaderWithHOC = GetViewPort(Header)
 export default HeaderWithHOC;
-{/* <a href="https://ant.design" target="_blank" rel="noopener noreferrer"></a> */}

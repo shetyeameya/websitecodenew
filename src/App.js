@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route } from 'react-router-dom';
+import {BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 import Footer from '../src/pages/Footer'
 import Header from '../src/pages/header'
@@ -8,18 +8,21 @@ import About from '../src/pages/About'
 // import { Router, Switch, Route } from 'react-router-dom';
 import { Layout } from 'antd';
 import ScrollTop from '../src/hoc-helpers/ScrollTop';
-import { BrowserRouter,  Link } from "react-router-dom";
-import Pokemongo from './PokemonGo/Pokemongo.js';
+// import Pokemongo from './PokemonGo/Pokemongo.js';
+import WorkPlayWithHOC from './pages/workplay';
+import Pokemongonew from '../src/PokemonGo/Pokemongonew';
+
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
       <Layout>
       <ScrollTop>
         <Header/>
         <Route path="/" exact component={Body} />
         <Route path="/about" component={About} />
-        <Route path="/workPlay" component={Pokemongo} />
+        <Route path="/workPlay" component={WorkPlayWithHOC} />
+        <Route path="/pokemonlist" component={Pokemongonew} />
         <div>
         <Footer />
         </div>
