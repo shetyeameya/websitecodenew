@@ -51,6 +51,15 @@ align-items: center;
 .butpad{
     padding-bottom: 3%; 
 }
+.frame1{
+    height: 100%;
+    background: blue;
+
+}
+.frame1 .ant-modal-content{
+    height: 90%;
+    background: red;
+}
 @media only screen and (max-width: 767px) {
     .page{
         padding: 2%;

@@ -10,6 +10,7 @@ import { Layout } from 'antd';
 import ScrollTop from '../src/hoc-helpers/ScrollTop';
 // import Pokemongo from './PokemonGo/Pokemongo.js';
 import WorkPlayWithHOC from './pages/workplay';
+import MacroCalculatorWithHOC from './pages/MacroCalculator';
 import Pokemongonew from '../src/PokemonGo/Pokemongonew';
 
 class App extends Component {
@@ -23,6 +24,8 @@ class App extends Component {
         <Route path="/about" component={About} />
         <Route path="/workPlay" component={WorkPlayWithHOC} />
         <Route path="/pokemonlist" component={Pokemongonew} />
+        <Route path="/macroCalculations" component={MacroCalculatorWithHOC} />
+
         <div>
         <Footer />
         </div>

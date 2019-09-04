@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import {Typography, Tag,Timeline,Modal, Collapse, Row, Col, Button} from 'antd';
 import PropTypes from 'prop-types';
+import ResumeAmeya from '../images/ResumeAmeya.pdf'
 import aditilor from '../images/aditilor.jpg';
 import poornimalor from '../images/poornimalor.jpg';
 import vaishalilor from '../images/vaishalilor.jpg';
@@ -106,6 +107,7 @@ class WorkPlay extends Component{
         showVjpg: false,
         showAjpg: false,
         showPjpg: false,
+        showPPjpg: false,
       };
     
       showModalA = () => {
@@ -113,6 +115,8 @@ class WorkPlay extends Component{
             showVjpg: false,
             showAjpg: true,
             showPjpg: false,
+            showPPjpg: false,
+            
         });
       };
       showModalV = () => {
@@ -120,6 +124,7 @@ class WorkPlay extends Component{
             showVjpg: true,
             showAjpg: false,
             showPjpg: false,
+            showPPjpg: false,
         });
       };
       showModalP = () => {
@@ -127,18 +132,33 @@ class WorkPlay extends Component{
             showVjpg: false,
             showAjpg: false,
             showPjpg: true,
+            showPPjpg: false,
         });
+      };
+      showModalPJ = () => {
+        this.setState({
+            showVjpg: false,
+            showAjpg: false,
+            showPjpg: false,
+            showPPjpg: true,
+        });
+      };
+      showModalR = () => {
+        window.open(ResumeAmeya, "_blank")
       };
     
       handleCancel = () => {
         this.setState({ showVjpg: false,
             showAjpg: false,
-            showPjpg: false, });
+            showPjpg: false,
+            showPPjpg: false,
+        });
+       
       };
       
 
     render() {
-        const { showVjpg, showAjpg, showPjpg, loading } = this.state;
+        const { showVjpg, showAjpg, showPjpg, showPPjpg, loading } = this.state;
         const { width } = this.props; 
 
         if (width < 786) { 
@@ -282,7 +302,7 @@ class WorkPlay extends Component{
               <Tag className="skills" color="blue">Selenium</Tag>
               </div>
               <div className="tchr">
-                <Text  strong>See what my teachers say about me.</Text>
+                <Text  strong> Testimonials</Text>
               </div>
               <div>
                   <Row className="butpad">
@@ -328,12 +348,12 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={aditilor} alt="current-user-thumbnail"/>
                         </Modal>
                   </Row>
-                  {/* <Row>
-                        <Button type="primary" onClick={this.showModalA}>
+                  <Row>
+                        <Button type="primary" onClick={this.showModalPJ}>
                             Principal Joquim
                         </Button>
                         <Modal
-                            visible={showAjpg}
+                            visible={showPPjpg}
                             title="Aditi Mam LOR"
                             onCancel={this.handleCancel}
                             footer={null}
@@ -341,7 +361,7 @@ class WorkPlay extends Component{
                         >
                             <img className="lorimg" src={aditilor} alt="current-user-thumbnail"/>
                         </Modal>
-                  </Row> */}
+                  </Row>
               </div>
               <div className="tchr">
                 <Text  strong>Intrested in Pokemons?</Text>
@@ -502,11 +522,11 @@ class WorkPlay extends Component{
               <Tag className="skills" color="blue">Selenium</Tag>
               </div>
               <div className="tchr">
-                <Text  strong>See what my teachers say about me.</Text>
+                <Text  strong>Testimonials</Text>
               </div>
               <div>
                   <Row>
-                      <Col className="pokem" align="left" span={8}>
+                      <Col className="pokem" align="left" span={6}>
                         <Button type="primary" onClick={this.showModalP}>
                             Poornima Mam LOR
                         </Button>
@@ -520,7 +540,7 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={poornimalor} alt="current-user-thumbnail"/>
                         </Modal>
                       </Col>
-                      <Col className="pokem" align="left" span={8}>
+                      <Col className="pokem" align="left" span={6}>
                         <Button type="primary" onClick={this.showModalV}>
                             Vaishali Mam LOR
                         </Button>
@@ -534,7 +554,7 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={vaishalilor} alt="current-user-thumbnail"/>
                         </Modal>
                       </Col>
-                      <Col className="pokem" align="left" span={8}>
+                      <Col className="pokem" align="left" span={6}>
                         <Button type="primary" onClick={this.showModalA}>
                             Aditi Mam LOR
                         </Button>
@@ -548,21 +568,30 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={aditilor} alt="current-user-thumbnail"/>
                         </Modal>
                         </Col>
-                        {/* <Col className="pokem" align="center" span={6}>
-                        <Button type="primary" onClick={this.showModalA}>
+                        <Col className="pokem" align="center" span={6}>
+                        <Button type="primary" onClick={this.showModalPJ}>
                             Principal Joquim
                         </Button>
                         <Modal
-                            visible={showAjpg}
-                            title="Title"
+                            visible={showPPjpg}
+                            title="Aditi Mam LOR"
                             onCancel={this.handleCancel}
                             footer={null}
                             width="80%"
                         >
                             <img className="lorimg" src={aditilor} alt="current-user-thumbnail"/>
                         </Modal>
-                      
-                      </Col> */}
+                      </Col>
+                  </Row>
+                  <Row>
+                    <div className="tchr">
+                        <Text  strong>Resume</Text>
+                    </div>
+                    <Col className="pokem" align="left">
+                        <Button type="primary" onClick={this.showModalR}>
+                            Open Resume
+                        </Button>
+                      </Col>
                   </Row>
               </div>
               <div className="tchr">
