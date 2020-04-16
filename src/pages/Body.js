@@ -1,15 +1,44 @@
 import React, { Component } from 'react';
-import { Row,Carousel} from 'antd';
+import { Row,Carousel, Button} from 'antd';
 import './Body.css'
 // import GetViewPort from '../hoc-helpers/GetViewPort';
 function onChange(a, b, c) {
     console.log(a, b, c);
   }
 class Body extends Component{
+    showModalR = () => {
+        window.open("https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/cases-in-us.html", "_blank")
+      };
     render(){
     return (
      <div className="bodycontent">
      <Carousel autoplay effect="scrollx" afterChange={onChange}>
+     <div>
+        <h3>
+        <Row className="titleCovid">
+        Covid-19 Alert!
+        </Row>
+        <Row className="titleCovid1">
+        Stay Home! 
+        </Row>
+        <Row className="titleCovid1">
+        Wash Your Hands regularly!  
+        </Row>
+        <Row className="titleCovid1">
+        Stay Safe!  
+        </Row>
+        <Row className="titleCovid1"> 
+            Help Reduce the Curve 
+        </Row>
+        <Button className="covidbut" type="primary" onClick={this.showModalR}>
+                            Visit CDC Website
+                        </Button>
+        <Row className="titleCovid1">
+        
+            For latest updates Please vist the CDC website only.
+        </Row>
+        </h3>
+        </div>
      <div>
         <h3>
         <Row className="title">
