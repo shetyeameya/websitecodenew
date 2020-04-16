@@ -98,6 +98,20 @@ I also learned that only hard work helps you achieve the targets. Now I am worki
 and Native developer and back to coding, my passion. While working on react I have worked on various projects in Rumbleon, 
 Mobile version V2, web version RumbleonClassifieds.com V2 and V3, Rumbleon.com V2 and V3. Currently working on an internal tool
 for dealers V3. `
+const enviornments = ["Windows", "Linux", "Mac"];
+const Languages = ["C", "C++", "Java", "Objective C", "Swift", "Python", "JavaScript","TypeScript", "CSS", "HTML", "node.js"];
+const Libraries= ["React", "Ajax", "jQuery"];
+const Frameworks =["AVFoundation", "CoreData", "SDK", "Unity", "CoreFoundation","CoreGraphics", "Core Animation",
+   " CoreLocation", "CorePDF", "CoreVideo", "EventKit", "iWebKit", "Bluetooth(Bluetooth low energy)", 
+    "IOT Camera", "Sprite Kit", "Maps", "cocopods", "CocoaTouch", "KnockoutJs" ];
+const servers = [ "Parse", "Heroku", "Mongodb", "Amazon web services", "Firebase"];
+const Development =["Visual Studio 2012", "visual studio code", "Xcode", "Android Studio","Postman", "GraphQL(VisualStudioCode)", "Xming",
+ "Quartus II", "Putty", "Cisco Packet Tracer", "MATLAB", "sketch 3"]; 
+const Management =["Git", "SourceTree", "BitBucket"];
+const Designp =["MVC","MVVM", "Protocol Oriented Programming", "OOP, Singleton"];
+const Unit  =["Karma", "Appium", "Selenium"];
+const Browsers =["IE", "Firefox", "Opera", "Chrome", "Safari", "Edge"];
+const Domains =["Finance", "Social Networking", "E-commerce", "Mobile Application Development"];
 
 
 class WorkPlay extends Component{
@@ -170,7 +184,7 @@ class WorkPlay extends Component{
               </div>
               <div>
                   <h3 className="sumdef">
-                  A Motivated Engineer with a masters degree and 3 years of relevant emphasis on mobile application development; Currently working on Reactjs and native development.
+                  A Motivated Engineer with a master’s degree and 4 years of relevant Frontend Development, emphasis in Web-based applications and mobile application development; Expertise jQuery, JavaScript, TypeScript, JSON, CSS/CSS3, Swift, Objective C, React hooks, web sockets, Ajax, RESTFUL services, SOAP web services, Node.js. Experience in all phase of Software Development Life Cycle like Requirement Analysis, Implementation and Maintenance, and extensive experience with Agile and SCRUM. Hands on experience in React.js for creating interactive UI's using One-way data flow, JSX, React Native concepts and state management such as Redux and Context. Strong problem-solving, organizing, communication and planning skills, with ability to work in team environment.
                   </h3>
               </div>
               <div>
@@ -231,75 +245,76 @@ class WorkPlay extends Component{
                 <Tag className="sum" color="#FE5500">Technical Skills</Tag>
               </div>
               <div className="TecSkl">
-                <Tag className="skills" color="#00BDFE">Servers:</Tag>
-                <Tag className="skills" color="blue">Parse</Tag>
-                <Tag className="skills" color="blue">Heroku</Tag>
-                <Tag className="skills" color="blue">Mongodb</Tag>
-                <Tag className="skills" color="blue">Amazon web services</Tag>
+                <Tag className="skills" color="#00BDFE">Environments:</Tag>
+                {enviornments.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
               </div>
               <div className="TecSkl">
                 <Tag className="skills" color="#00BDFE">Scripting Languages:</Tag>
-                <Tag className="skills" color="blue">C</Tag>
-                <Tag className="skills" color="blue">C++</Tag>
-                <Tag className="skills" color="blue">ObjectiveC</Tag>
-                <Tag className="skills" color="blue">Swift</Tag>
-                <Tag className="skills" color="blue">Python</Tag>
-                <Tag className="skills" color="blue">React</Tag>
+                {Languages.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
               </div>
               <div className="TecSkl">
-                <Tag className="skills" color="#00BDFE">Projects On:</Tag>
-              <Tag className="skills" color="blue">MySQLite</Tag>
-              <Tag className="skills" color="blue">Software Development Cycle</Tag>
-              <Tag className="skills" color="blue">JQuery</Tag>
-              <Tag className="skills" color="blue">Restful service</Tag>
-              <Tag className="skills" color="blue">JSON</Tag>
-              <Tag className="skills" color="blue">Navigation System and Geolocation</Tag>
-              <Tag className="skills" color="blue">JSON</Tag>
-              <Tag className="skills" color="blue">Core Data</Tag>
-              <Tag className="skills" color="blue">Core graphics</Tag>
-              <Tag className="skills" color="blue">Facebook Integration</Tag>
-              <Tag className="skills" color="blue">Sprite Kit</Tag>
-              <Tag className="skills" color="blue">OOP</Tag>
-              <Tag className="skills" color="blue">Push Notifications</Tag>
-              <Tag className="skills" color="blue">Git(Version Control)</Tag>
-              <Tag className="skills" color="blue">Unit Testing</Tag>
-              <Tag className="skills" color="blue">Bluetooth(Bluetooth low energy)</Tag>
-              <Tag className="skills" color="blue">IOT Camera</Tag>
-              <Tag className="skills" color="blue">Firebase</Tag>
-              <Tag className="skills" color="blue">cocopods</Tag>
-              <Tag className="skills" color="blue">Protocol Oriented Programming</Tag>
-              <Tag className="skills" color="blue">Back-end APIs</Tag>
-              <Tag className="skills" color="blue">Core Animation</Tag>
-              <Tag className="skills" color="blue">Auto-layout</Tag>
-              <Tag className="skills" color="blue">UI/UX design</Tag>
-              <Tag className="skills" color="blue">unity</Tag>
-              <Tag className="skills" color="blue">HTML</Tag>
-              <Tag className="skills" color="blue">node.js</Tag>
-              <Tag className="skills" color="blue">Design patterns(MVC,MVVM)</Tag>
+                <Tag className="skills" color="#00BDFE">Libraries:</Tag>
+                {Libraries.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
               </div>
               <div className="TecSkl">
-              <Tag className="skills" color="#00BDFE">Operating Systems:</Tag>
-              <Tag className="skills" color="blue">Mac</Tag>
-              <Tag className="skills" color="blue">Windows</Tag>
-              <Tag className="skills" color="blue">Linux</Tag>
+              <Tag className="skills" color="#00BDFE">Frameworks:</Tag>
+              {Frameworks.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
               </div>
               <div className="TecSkl">
-              <Tag className="skills" color="#00BDFE">Software:</Tag>
-              <Tag className="skills" color="blue">Xcode</Tag>
-              <Tag className="skills" color="blue">Android Studio</Tag>
-              <Tag className="skills" color="blue">Xming</Tag>
-              <Tag className="skills" color="blue">QuartusII</Tag>
-              <Tag className="skills" color="blue">Putty</Tag>
-              <Tag className="skills" color="blue">Cisco Packet Tracer</Tag>
-              <Tag className="skills" color="blue">Matlab</Tag>
-              <Tag className="skills" color="blue">Sketch 3</Tag>
-              <Tag className="skills" color="blue">Visual Studio</Tag>
+              <Tag className="skills" color="#00BDFE">Servers:</Tag>
+              {servers.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
+              </div>
+              <div className="TecSkl">
+              <Tag className="skills" color="#00BDFE">Development Tools:</Tag>
+              {Development.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
               </div>
               <div className="TecSkl">
               <Tag className="skills" color="#00BDFE">Testing:</Tag>
-              <Tag className="skills" color="blue">Jira</Tag>
-              <Tag className="skills" color="blue">Appium</Tag>
-              <Tag className="skills" color="blue">Selenium</Tag>
+              {servers.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
+              </div>
+              <div className="TecSkl">
+              <Tag className="skills" color="#00BDFE">Management Tools:</Tag>
+              {Management.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
+              </div>
+              <div className="TecSkl">
+              <Tag className="skills" color="#00BDFE">Design patterns:</Tag>
+              {Designp.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
+              </div>
+              <div className="TecSkl">
+              <Tag className="skills" color="#00BDFE">Unit Testing:</Tag>
+              {Unit.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
+              </div>
+              <div className="TecSkl">
+              <Tag className="skills" color="#00BDFE">Browsers:</Tag>
+              {Browsers.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
+              </div>
+              <div className="TecSkl">
+              <Tag className="skills" color="#00BDFE">Domains:</Tag>
+              {Domains.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
               </div>
               <div className="tchr">
                 <Text  strong> Testimonials</Text>
@@ -334,7 +349,7 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={vaishalilor} alt="current-user-thumbnail"/>
                         </Modal>
                       </Row>
-                      <Row>
+                      <Row className="butpad">
                         <Button type="primary" onClick={this.showModalA}>
                             Aditi Mam LOR
                         </Button>
@@ -348,24 +363,23 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={aditilor} alt="current-user-thumbnail"/>
                         </Modal>
                   </Row>
-                  <Row>
-                        <Button type="primary" onClick={this.showModalPJ}>
-                            Principal Joquim
+              </div>
+              <div>
+              <Row>
+                    <div className="tchr">
+                        <Text  strong>Resume</Text>
+                    </div>
+                    <Col className="pokem" align="left">
+                        <Button type="primary" onClick={this.showModalR}>
+                            Open Resume
                         </Button>
-                        <Modal
-                            visible={showPPjpg}
-                            title="Aditi Mam LOR"
-                            onCancel={this.handleCancel}
-                            footer={null}
-                            width="80%"
-                        >
-                            <img className="lorimg" src={aditilor} alt="current-user-thumbnail"/>
-                        </Modal>
+                      </Col>
                   </Row>
               </div>
               <div className="tchr">
                 <Text  strong>Intrested in Pokemons?</Text>
               </div>
+              
               <div className="pokem">
                 <Row>
                     <Col  align="center" >
@@ -390,7 +404,7 @@ class WorkPlay extends Component{
               </div>
               <div>
                   <h3 className="sumdef">
-                  A Motivated Engineer with a masters degree and 3 years of relevant emphasis on mobile application development; Currently working on Reactjs and native development.
+                  A Motivated Engineer with a master’s degree and 4 years of relevant Frontend Development, emphasis in Web-based applications and mobile application development; Expertise jQuery, JavaScript, TypeScript, JSON, CSS/CSS3, Swift, Objective C, React hooks, web sockets, Ajax, RESTFUL services, SOAP web services, Node.js. Experience in all phase of Software Development Life Cycle like Requirement Analysis, Implementation and Maintenance, and extensive experience with Agile and SCRUM. Hands on experience in React.js for creating interactive UI's using One-way data flow, JSX, React Native concepts and state management such as Redux and Context. Strong problem-solving, organizing, communication and planning skills, with ability to work in team environment.
                   </h3>
               </div>
               <div>
@@ -451,82 +465,83 @@ class WorkPlay extends Component{
                 <Tag className="sum" color="#FE5500">Technical Skills</Tag>
               </div>
               <div className="TecSkl">
-                <Tag className="skills" color="#00BDFE">Servers:</Tag>
-                <Tag className="skills" color="blue">Parse</Tag>
-                <Tag className="skills" color="blue">Heroku</Tag>
-                <Tag className="skills" color="blue">Mongodb</Tag>
-                <Tag className="skills" color="blue">Amazon web services</Tag>
+                <Tag className="skills" color="#00BDFE">Environments:</Tag>
+                {enviornments.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
               </div>
               <div className="TecSkl">
                 <Tag className="skills" color="#00BDFE">Scripting Languages:</Tag>
-                <Tag className="skills" color="blue">C</Tag>
-                <Tag className="skills" color="blue">C++</Tag>
-                <Tag className="skills" color="blue">ObjectiveC</Tag>
-                <Tag className="skills" color="blue">Swift</Tag>
-                <Tag className="skills" color="blue">Python</Tag>
-                <Tag className="skills" color="blue">React</Tag>
+                {Languages.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
               </div>
               <div className="TecSkl">
-                <Tag className="skills" color="#00BDFE">Projects On:</Tag>
-              <Tag className="skills" color="blue">MySQLite</Tag>
-              <Tag className="skills" color="blue">Software Development Cycle</Tag>
-              <Tag className="skills" color="blue">JQuery</Tag>
-              <Tag className="skills" color="blue">Restful service</Tag>
-              <Tag className="skills" color="blue">JSON</Tag>
-              <Tag className="skills" color="blue">Navigation System and Geolocation</Tag>
-              <Tag className="skills" color="blue">JSON</Tag>
-              <Tag className="skills" color="blue">Core Data</Tag>
-              <Tag className="skills" color="blue">Core graphics</Tag>
-              <Tag className="skills" color="blue">Facebook Integration</Tag>
-              <Tag className="skills" color="blue">Sprite Kit</Tag>
-              <Tag className="skills" color="blue">OOP</Tag>
-              <Tag className="skills" color="blue">Push Notifications</Tag>
-              <Tag className="skills" color="blue">Git(Version Control)</Tag>
-              <Tag className="skills" color="blue">Unit Testing</Tag>
-              <Tag className="skills" color="blue">Bluetooth(Bluetooth low energy)</Tag>
-              <Tag className="skills" color="blue">IOT Camera</Tag>
-              <Tag className="skills" color="blue">Firebase</Tag>
-              <Tag className="skills" color="blue">cocopods</Tag>
-              <Tag className="skills" color="blue">Protocol Oriented Programming</Tag>
-              <Tag className="skills" color="blue">Back-end APIs</Tag>
-              <Tag className="skills" color="blue">Core Animation</Tag>
-              <Tag className="skills" color="blue">Auto-layout</Tag>
-              <Tag className="skills" color="blue">UI/UX design</Tag>
-              <Tag className="skills" color="blue">unity</Tag>
-              <Tag className="skills" color="blue">HTML</Tag>
-              <Tag className="skills" color="blue">node.js</Tag>
-              <Tag className="skills" color="blue">Design patterns(MVC,MVVM)</Tag>
+                <Tag className="skills" color="#00BDFE">Libraries:</Tag>
+                {Libraries.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
               </div>
               <div className="TecSkl">
-              <Tag className="skills" color="#00BDFE">Operating Systems:</Tag>
-              <Tag className="skills" color="blue">Mac</Tag>
-              <Tag className="skills" color="blue">Windows</Tag>
-              <Tag className="skills" color="blue">Linux</Tag>
+              <Tag className="skills" color="#00BDFE">Frameworks:</Tag>
+              {Frameworks.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
               </div>
               <div className="TecSkl">
-              <Tag className="skills" color="#00BDFE">Software:</Tag>
-              <Tag className="skills" color="blue">Xcode</Tag>
-              <Tag className="skills" color="blue">Android Studio</Tag>
-              <Tag className="skills" color="blue">Xming</Tag>
-              <Tag className="skills" color="blue">QuartusII</Tag>
-              <Tag className="skills" color="blue">Putty</Tag>
-              <Tag className="skills" color="blue">Cisco Packet Tracer</Tag>
-              <Tag className="skills" color="blue">Matlab</Tag>
-              <Tag className="skills" color="blue">Sketch 3</Tag>
-              <Tag className="skills" color="blue">Visual Studio</Tag>
+              <Tag className="skills" color="#00BDFE">Servers:</Tag>
+              {servers.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
+              </div>
+              <div className="TecSkl">
+              <Tag className="skills" color="#00BDFE">Development Tools:</Tag>
+              {Development.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
               </div>
               <div className="TecSkl">
               <Tag className="skills" color="#00BDFE">Testing:</Tag>
-              <Tag className="skills" color="blue">Jira</Tag>
-              <Tag className="skills" color="blue">Appium</Tag>
-              <Tag className="skills" color="blue">Selenium</Tag>
+              {servers.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
+              </div>
+              <div className="TecSkl">
+              <Tag className="skills" color="#00BDFE">Management Tools:</Tag>
+              {Management.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
+              </div>
+              <div className="TecSkl">
+              <Tag className="skills" color="#00BDFE">Design patterns:</Tag>
+              {Designp.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
+              </div>
+              <div className="TecSkl">
+              <Tag className="skills" color="#00BDFE">Unit Testing:</Tag>
+              {Unit.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
+              </div>
+              <div className="TecSkl">
+              <Tag className="skills" color="#00BDFE">Browsers:</Tag>
+              {Browsers.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
+              </div>
+              <div className="TecSkl">
+              <Tag className="skills" color="#00BDFE">Domains:</Tag>
+              {Domains.map(a => (
+                    <Tag className="skills" color="blue"> {a} </Tag>
+                ))}
               </div>
               <div className="tchr">
                 <Text  strong>Testimonials</Text>
               </div>
               <div>
                   <Row>
-                      <Col className="pokem" align="left" span={6}>
+                      <Col className="pokem" align="left" span={8}>
                         <Button type="primary" onClick={this.showModalP}>
                             Poornima Mam LOR
                         </Button>
@@ -540,7 +555,7 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={poornimalor} alt="current-user-thumbnail"/>
                         </Modal>
                       </Col>
-                      <Col className="pokem" align="left" span={6}>
+                      <Col className="pokem" align="left" span={8}>
                         <Button type="primary" onClick={this.showModalV}>
                             Vaishali Mam LOR
                         </Button>
@@ -554,7 +569,7 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={vaishalilor} alt="current-user-thumbnail"/>
                         </Modal>
                       </Col>
-                      <Col className="pokem" align="left" span={6}>
+                      <Col className="pokem" align="left" span={8}>
                         <Button type="primary" onClick={this.showModalA}>
                             Aditi Mam LOR
                         </Button>
@@ -568,20 +583,6 @@ class WorkPlay extends Component{
                             <img className="lorimg" src={aditilor} alt="current-user-thumbnail"/>
                         </Modal>
                         </Col>
-                        <Col className="pokem" align="center" span={6}>
-                        <Button type="primary" onClick={this.showModalPJ}>
-                            Principal Joquim
-                        </Button>
-                        <Modal
-                            visible={showPPjpg}
-                            title="Aditi Mam LOR"
-                            onCancel={this.handleCancel}
-                            footer={null}
-                            width="80%"
-                        >
-                            <img className="lorimg" src={aditilor} alt="current-user-thumbnail"/>
-                        </Modal>
-                      </Col>
                   </Row>
                   <Row>
                     <div className="tchr">
